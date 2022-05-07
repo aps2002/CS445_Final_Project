@@ -18,24 +18,31 @@ We use dlib, a modern C++ toolkit :toolbox: containing machine learning algorith
 At this point, we know there are faces, but we don't know anything about them. We want to look for the person's facial features, like their eyebrows 🤨, eyes 👁️, where their cheeks end, their mouth 😮, nose 👃, and chin. By knowing 🧠 this information, we know which areas of the images 🖼️ we need to focus in. Again, we use dlib to find these points. We grab 68 different coordinates for each face. These get stored in a list in ```[(x1,y1),(x2,y2),...]``` format.
 
 ### 2️⃣ Find Delaunay Triangulation 🔺 🔻
-We now know where all of our facial features are for both images, but now we find the delaunay triangulation 📐. From each of our 68 points, we draw triangles from one point to the next closest one 📏. Delaunay Triangulation is used to transform one face to another, and also help with facial geometry. The diagram below first shows all 68 points plotted onto President Obama's face. The middle image 🖼️ shows Delaunay Triangulation performed on all 6️⃣8️⃣ points.
+We now know where all of our facial features are for both images, but now we find the delaunay triangulation. From each of our 68 points, we draw triangles from one point to the next closest one 📏. Delaunay Triangulation is used to transform one face to another, and also help with facial geometry. The diagram below first shows all 68 points plotted onto 🇺🇸 President Obama's 🇺🇸 face. The middle image 🖼️ shows Delaunay Triangulation performed on all 6️⃣8️⃣ points.
 
 ![Visual of Delaunay Triangulation](https://learnopencv.com/wp-content/uploads/2015/11/opencv-delaunay-vornoi-subdiv-example.jpg)
 
 Image taken from learnopencv.com
 
-### 3️⃣ Warping Triangular Mesh
+### 3️⃣ Warping Triangular Mesh 📐
 
 This is a subsection of the previous step. This is where the triangles on the second image are replaced by the triangles from the first image, essentially making the initial transormation on the second image. 
 
-### 4️⃣ Reconstruct Faces
+### 4️⃣ Reconstruct Faces 🐼
 
 This step does some touching up on the newly constructed face to make sure the transition went smoothly. 
 
-Here is an example output:
+## Here is an example output:
 
-First Image: ![Trae Young](https://github.com/aps2002/CS445_Final_Project/blob/main/images/traeDaddy.png)
+### First Image 🧊🥶: 
 
-Second Image: ![Luka Doncic](https://github.com/aps2002/CS445_Final_Project/blob/main/images/lukaBum.png)
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/traeDaddy.png" alt="Trae Young" width="500"/> 
 
-Output: ![Combined](https://github.com/aps2002/CS445_Final_Project/blob/main/outputs/trae_luka.png)
+### Second Image 🧹: 
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/lukaBum.png" alt="Luka Doncic" width="500"/> 
+
+
+### Output 📤:
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/outputs/trae_luka.png" alt="Combined" width="500"/> 
