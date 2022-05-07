@@ -26,4 +26,16 @@ Image taken from learnopencv.com
 
 ### 3️⃣ Warping Triangular Mesh
 
+This is a subsection of the previous step. This is where the triangles on the second image are replaced by the triangles from the first image, essentially making the initial transormation on the second image. 
+
 ### 4️⃣ Reconstruct Faces
+
+This step does some touching up on the newly constructed face to make sure the transition went smoothly. 
+
+Here is an example output:
+
+First Image: ![Trae Young](https://github.com/aps2002/CS445_Final_Project/blob/main/images/traeDaddy.png)
+
+Second Image: ![Luka Doncic](https://github.com/aps2002/CS445_Final_Project/blob/main/images/lukaBum.png)
+
+Output: ![Combined](https://github.com/aps2002/CS445_Final_Project/blob/main/outputs/trae_luka.png)
