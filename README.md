@@ -68,7 +68,21 @@ This likely means that the path to the image was incorrect. Make sure your path 
 #### Face Not Found
 If your you have an output where either the image was not changed or there is no face on the outputted image, it is like likely because no face was detected in either image. Look to see that the facial landmarks are found on the image in [final.ipynb](https://github.com/aps2002/CS445_Final_Project/blob/main/final.ipynb) around lined "In(250)".
 
-# Example Outputs:
+## File Organization:
+```
+.
+├── images                                       # Images with faces (input images)
+│   └── ...                                      # All input images
+├── outputs                                      # Processed images (output images)
+│   └── ...                                      # All output images
+├── test                                         # Test files (alternatively `spec` or `tests`)
+├── README.md                                    # Introduces and explains this project
+├── final.ipynb                                  # Jupyter Notebook file containing code
+├── requirementx.txt                             # Text file containing all packages that need to be installed
+├── shape_predictor_68_face_landmarks.dat        # Trained model to detect faces and find 68 landmark points
+└── ...
+```
+## Example Outputs:
 
 #### First Image 🧊🥶: 
 
