@@ -32,17 +32,72 @@ This is a subsection of the previous step. This is where the triangles on the se
 
 This step does some touching up on the newly constructed face to make sure the transition went smoothly. 
 
-## Here is an example output:
+# Installation:
 
-### First Image 🧊🥶: 
-
-<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/traeDaddy.png" alt="Trae Young" width="500"/> 
-
-### Second Image 🧹: 
-
-<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/lukaBum.png" alt="Luka Doncic" width="500"/> 
+Prerequistes:
+1. Python 3.4 or later
+2. [Pip](https://pip.pypa.io/en/stable/)
+3. [Jupyter-notebook](https://jupyter.org/install)  
 
 
-### Output 📤:
+Use the package manager pip to install all dependencies.
 
-<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/outputs/trae_luka.png" alt="Combined" width="500"/> 
+```bash
+pip install -r requirements.txt
+```
+
+These are the dependencies and versions if needed:
+```
+cv2 == 4.5.5
+dlib == 19.23.1
+matplotlib == 3.4.3
+numpy == 1.20.3
+```
+
+[final.ipynb](https://github.com/aps2002/CS445_Final_Project/blob/main/final.ipynb) contains all of the code. Run each cell in order from top to bottom.
+
+## Troubleshooting
+
+#### Image Not Found
+If you get an error such as:
+```
+error: OpenCV(4.5.5) /Users/runner/work/opencv-python/opencv-python/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
+```
+This likely means that the path to the image was incorrect. Make sure your path is correct and your specified file has the correct extension.
+
+#### Face Not Found
+If your you have an output where either the image was not changed or there is no face on the outputted image, it is like likely because no face was detected in either image. Look to see that the facial landmarks are found on the image in [final.ipynb](https://github.com/aps2002/CS445_Final_Project/blob/main/final.ipynb) around lined "In(250)".
+
+# Example Outputs:
+
+#### First Image 🧊🥶: 
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/traeDaddy.png" alt="Trae Young" width="400"/> 
+
+#### Second Image 🧹: 
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/lukaBum.png" alt="Luka Doncic" width="400"/> 
+
+
+#### Output 📤:
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/outputs/trae_luka.png" alt="Combined" width="400"/> 
+
+Here we can see how the output looks like for two people with different skin colors.
+
+### Another Example
+
+#### First Image 💙🧡 : 
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/ayo.png" alt="Ayo" width="400"/> 
+
+#### Second Image 💙🧡 : 
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/images/kofi.png" alt="Kofi" width="400"/> 
+
+
+#### Output 💙🧡 :
+
+<img src="https://github.com/aps2002/CS445_Final_Project/blob/main/outputs/KofiAyoCombined.png" alt="Combined" width="400"/> 
+
+Here we can see how the outputs work on two images that are very different sizes. The first image is over double the size as the second image
