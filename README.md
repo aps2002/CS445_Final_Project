@@ -2,7 +2,7 @@
 
 We have developed a software that takes two people's faces and morphs the first person's face into the second person's face :bangbang: We did this for our final project for CS 445: Computational Photography :computer: offered by the University of Illinois at Urbana-Champaign :school:.
 
-## Our Motivation :smile:
+## Our Motivation/Purpose :smile:
 
 We chose this topic at the beginning because we found the concept of Image morphing very interesting since we have actually seen it in youtube videos and apps. These platforms show a very cool transition between 2 faces and it seems interesting to research this due to the interesting math :heavy_multiplication_x: and linear algebra involved in this progress. We will learn :brain: more in depth about image transformation, specifically the laplacian transform and the fast fourier transform, since we will need to consider high and low frequency components in our project.
 
